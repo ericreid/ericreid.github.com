@@ -25,7 +25,7 @@
 		<dl class="labels">
 			{% for post in site.posts limit:8 %}
 				<dt>{{ post.date | date: "%d %b" }}</dt>
-				<dd><a href="/{{ post.url }}" class="title">{{ post.title }}</a></dd>
+				<dd><a href="{{ post.url }}" class="title">{{ post.title }}</a></dd>
 			{% endfor %}
 			<dt>&nbsp;</dt>
 			<dd><a href="/archive/">See All &rarr;</a></dd>
