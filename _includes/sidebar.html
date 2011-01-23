@@ -1,0 +1,37 @@
+<div class="sidebar">
+	<div class="about-me">
+		<h1>&nbsp;</h1>
+		<a href="http://gravatar.com/avatar/b04df3380563faf2f744af8e36a9638d?s=354" class="fancybox no-title avatar"><img src="http://gravatar.com/avatar/b04df3380563faf2f744af8e36a9638d?s=50" alt="" /></a>
+		<div class="description">
+			<p>
+				Father. Husband. Geek. Currently a full time iOS developer.
+			</p>
+			<div class="clear"></div>
+			<dl class="labels">
+				<dt>email</dt>
+				    <a href="mailto:reidek@gmail.com">
+				<dt></dt>
+				<dd>
+					<a href="http://twitter.com/ericreid" onclick="_gaq.push(['_trackEvent', 'linkTo', 'twitter', this.href]);">twitter</a>,
+					<a href="http://github.com/ericreid" onclick="_gaq.push(['_trackEvent', 'linkTo', 'github', this.href]);">github</a>,
+					<a href="http://www.facebook.com/reidek" onclick="_gaq.push(['_trackEvent', 'linkTo', 'facebook', this.href]);">facebook</a>,
+					<a href="http://www.linkedin.com/in/ericreid" onclick="_gaq.push(['_trackEvent', 'linkTo', 'linkedin', this.href]);">linkedin</a>,
+					<a href="http://www.flickr.com/photos/reidek/" onclick="_gaq.push(['_trackEvent', 'linkTo', 'flickr', this.href]);">flickr</a>,
+				</dd>
+			</dl>
+		</div>
+	</div>
+	<div class="section recent-articles">
+		<h2>Recent Articles</h2>
+		<dl class="labels">
+			{% for post in site.posts limit:8 %}
+				<dt>{{ post.date | date: "%d %b" }}</dt>
+				<dd><a href="/{{ post.url }}" class="title">{{ post.title }}</a></dd>
+			{% endfor %}
+			<dt>&nbsp;</dt>
+			<dd><a href="/archive/">See All &rarr;</a></dd>
+		</dl>
+	</div>
+</div>
+
+<div class="clear"></div>

@@ -1,1 +1,8 @@
-Hello, world!
+---
+layout: post-list
+title: ericreid.org
+---
+
+{% for page in paginator.posts %}
+	{% include post-div.html %}
+{% endfor %}

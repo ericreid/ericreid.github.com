@@ -1,0 +1,6 @@
+auto: false
+destination: ./_site
+markdown: rdiscount
+paginate: 8
+pygments: true
+lsi: false

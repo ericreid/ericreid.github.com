@@ -1,0 +1,25 @@
+{% include _head.html %}
+
+<div id="universe">
+	
+	<div id="header">
+		<div id="title">
+			{{ page.title }}
+		</div>
+		<div id="navigation">
+			<a href="/">home</a>
+		</div>
+		<div class="clear"></div>
+	</div>
+	
+	<div class="post-world">
+		{{ content }}
+	</div>
+	
+	{% include sidebar.html %}
+	
+	{% include paginator-empty.html %}
+	
+</div>
+
+{% include _foot.html %}

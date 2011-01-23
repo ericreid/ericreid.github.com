@@ -1,0 +1,27 @@
+{% include _head.html %}
+
+<div id="universe">
+	
+	<div id="header">
+		<div id="title">
+			archive
+		</div>
+		<div id="navigation">
+			<a href="/">home</a>
+		</div>
+		<div class="clear"></div>
+	</div>
+	
+	<div class="post-world">
+		{{ content }}
+	</div>
+	
+	{% include sidebar.html %}
+	
+	<div class="post-paginator">
+		<a href="http://feeds.feedburner.com/ericreid">rss</a>
+	</div>
+	
+</div>
+
+{% include _foot.html %}
