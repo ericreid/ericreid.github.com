@@ -1,5 +1,6 @@
 ---
 layout: post
+date: 2011-03-11 12:26:00 
 title: setAllowsAirPlay quicktip
 ---
 
