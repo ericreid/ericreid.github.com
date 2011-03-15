@@ -8,7 +8,8 @@ Here's a quickie. iOS 4.3 opened up AirPlay for 3rd party devices. However, it's
 {% highlight objc %}
 SEL allowsAirplaySelector = @selector(setAllowsAirPlay:);
 if([self.moviePlayer respondsToSelector:allowsAirplaySelector]) {
-    [self.moviePlayer performSelector:allowsAirplaySelector withObject:[NSNumber numberWithBool:YES]];
+    [self.moviePlayer performSelector:allowsAirplaySelector 
+        withObject:[NSNumber numberWithBool:YES]];
 }
 {% endhighlight %}
 
